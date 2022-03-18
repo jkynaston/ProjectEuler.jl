@@ -1,4 +1,4 @@
-name = "ProjectEuler"
+name = "ProjectEuler.jl"
 uuid = "ae0a26b3-17f9-4320-b8d8-959381e61318"
 authors = ["Joshua C. Kynaston <josh.c.kynaston@gmail.com> and contributors"]
 version = "0.1.0"

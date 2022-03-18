@@ -23,7 +23,11 @@ function get_smallest_divisor(n::Int64)
 end
 
 function reverse_int(n::Int64)
-    return parse(Int, reduce(string, digits(n)))
+    if n <= 9
+        return n
+    else
+        return parse(Int, reduce(string, digits(n)))
+    end
 end
 
 function totient(n::Int64)
