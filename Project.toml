@@ -1,0 +1,13 @@
+name = "ProjectEuler"
+uuid = "ae0a26b3-17f9-4320-b8d8-959381e61318"
+authors = ["Joshua C. Kynaston <josh.c.kynaston@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
