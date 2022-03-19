@@ -22,6 +22,18 @@ function get_smallest_divisor(n::Int64)
     return k
 end
 
+function get_prime_factors(N::Int64)
+    S = Vector{Int64}()
+    while true
+        !isprime(N) || break
+        k = get_smallest_divisor(N)
+        push!(S, k)
+        N::Int64 = N/k
+    end
+    push!(S, N)
+    return S
+end
+
 function reverse_int(n::Int64)
     if n <= 9
         return n
