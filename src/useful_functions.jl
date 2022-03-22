@@ -61,3 +61,15 @@ function totient(n::Int64)
     
     return result
 end
+
+function prime_sieve(N::Int64)
+    iscoprime(P, i) = !any(x -> i % x == 0, P)
+
+    primes = Int64[]
+    for num = 2:N
+        if iscoprime(primes, num)
+            push!(primes, num)
+        end
+    end
+    primes
+end
